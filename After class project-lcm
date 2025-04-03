@@ -1,0 +1,13 @@
+def lcm(n, m):
+    if n>m:
+        greater=n
+    else:
+        greater=m
+    while True:
+        if greater%n==0 and greater%m==0:
+            return greater
+        greater += 1
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+print(f"LCM of {num1} and {num2} is {lcm(num1, num2)}")
